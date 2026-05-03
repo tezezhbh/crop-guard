@@ -4,7 +4,7 @@ __pycache__/
 .env
 data/
 checkpoints/
-saved_model/
+# saved_model/
 evaluation_outputs/
 *.h5
 *.keras
