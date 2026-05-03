@@ -35,7 +35,7 @@ from pydantic import BaseModel
 
 # ── Constants ──────────────────────────────────────────────────────────────
 MODEL_PATH       = Path(os.getenv("MODEL_PATH",       "saved_model/plant_disease_model"))
-CLASS_INDEX_PATH = Path(os.getenv("CLASS_INDEX_PATH", "saved_model/plant_disease_model/variables/class_index.json"))
+CLASS_INDEX_PATH = Path(os.getenv("CLASS_INDEX_PATH", "class_index.json"))
 IMG_SIZE         = (224, 224)
 MAX_FILE_BYTES   = int(os.getenv("MAX_FILE_BYTES", 10 * 1024 * 1024))
 
