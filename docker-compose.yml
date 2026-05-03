@@ -1,0 +1,87 @@
+# docker-compose.yml — CropGuard AI production stack
+# Usage: docker compose up -d
+#
+# Services:
+#   db       — PostgreSQL 15
+#   backend  — Node.js Express API (port 3001)
+#   ml       — Python FastAPI ML server (port 8000, internal only)
+#   frontend — Vite built SPA served by nginx (port 80/443)
+
+version: "3.9"
+
+services:
+  db:
+    image: postgres:15-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB:       crop_db
+      POSTGRES_USER:     postgres
+      POSTGRES_PASSWORD: ${DB_PASSWORD:-changeme}
+    volumes:
+      - db_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    networks: [internal]
+
+  ml:
+    build:
+      context: ./ml
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    environment:
+      PORT: 8000
+      MODEL_PATH: saved_model/plant_disease_model
+      CLASS_INDEX_PATH: saved_model/plant_disease_model/variables/class_index.json
+      NODE_ENV: production
+    networks: [internal]
+    # ML server is NOT exposed externally — only backend can reach it
+
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    depends_on:
+      db:
+        condition: service_healthy
+      ml:
+        condition: service_started
+    environment:
+      PORT: 3001
+      NODE_ENV: production
+      DATABASE_URL: postgres://postgres:${DB_PASSWORD:-changeme}@db:5432/crop_db
+      AI_SERVER_URL: http://ml:8000
+      FRONTEND_URL: ${FRONTEND_URL:-http://localhost}
+      JWT_SECRET: ${JWT_SECRET}
+      GROQ_API_KEY: ${GROQ_API_KEY}
+    ports:
+      - "3001:3001"
+    volumes:
+      - uploads:/app/uploads
+    networks: [internal, external]
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+      args:
+        VITE_API_URL: ${VITE_API_URL:-http://localhost:3001}
+    restart: unless-stopped
+    ports:
+      - "80:80"
+    depends_on:
+      - backend
+    networks: [external]
+
+volumes:
+  db_data:
+  uploads:
+
+networks:
+  internal:
+    driver: bridge
+  external:
+    driver: bridge

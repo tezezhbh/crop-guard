@@ -1,0 +1,350 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About Us",
+    "contact": "Contact Us",
+    "diseases": "Disease Guide",
+    "signin": "Sign In",
+    "register": "Register",
+    "dashboard": "Dashboard",
+    "backHome": "Back to Home"
+  },
+  "home": {
+    "hero": {
+      "badge": "AI-Powered Agriculture",
+      "title": "Protect Your Crops with CropGuard AI",
+      "subtitle": "An intelligent, multilingual plant disease detection system designed for Ethiopian smallholder farmers. Upload a leaf image and receive instant AI-powered diagnosis with actionable treatment recommendations.",
+      "getStarted": "Get Started Free",
+      "learnMore": "Explore Disease Guide",
+      "supportedCrops": "Supports Wheat · Teff · Maize · Tomato · Potato · Pepper"
+    },
+    "stats": {
+      "accuracy": "93.7%",
+      "accuracyLabel": "Model Accuracy",
+      "diseases": "10+",
+      "diseasesLabel": "Disease Classes",
+      "languages": "3",
+      "languagesLabel": "Languages",
+      "farmers": "Tigray",
+      "farmersLabel": "Region Focus"
+    },
+    "features": {
+      "title": "Why CropGuard AI?",
+      "subtitle": "Purpose-built for Ethiopian smallholder farmers — accurate, accessible, and multilingual.",
+      "ai": {
+        "title": "AI Disease Detection",
+        "desc": "MobileNetV2-powered deep learning model trained on 14,559 leaf images achieves 93.7% classification accuracy across 10 crop disease classes."
+      },
+      "multilingual": {
+        "title": "3-Language Support",
+        "desc": "Full native support for English, Amharic (አማርኛ), and Tigrinya (ትግርኛ) — eliminating language barriers for Ethiopian farmers."
+      },
+      "instant": {
+        "title": "Instant Results",
+        "desc": "Upload a leaf photo and receive a diagnosis in seconds, complete with confidence scores and tailored treatment recommendations."
+      },
+      "history": {
+        "title": "Prediction History",
+        "desc": "Track all your past scans in a personal dashboard. Monitor disease trends across your fields over time."
+      },
+      "chat": {
+        "title": "AI Chat Assistant",
+        "desc": "Ask follow-up questions about any diagnosed disease in your preferred language. Powered by advanced natural language AI."
+      },
+      "crops": {
+        "title": "Local Crop Coverage",
+        "desc": "Disease detection tailored for Tigray-prevalent crops: Wheat, Teff, Maize, Tomato, Potato, and Pepper."
+      }
+    },
+    "howItWorks": {
+      "title": "How It Works",
+      "subtitle": "Three simple steps to protect your harvest",
+      "step1": { "title": "Upload a Leaf Photo", "desc": "Take a clear, close-up photo of the affected crop leaf and upload it directly from your phone or computer." },
+      "step2": { "title": "AI Analysis", "desc": "Our MobileNetV2 deep learning model instantly analyzes the image, detecting disease patterns with 93.7% accuracy." },
+      "step3": { "title": "Get Recommendations", "desc": "Receive the disease name, confidence score, and specific chemical and organic treatment options in your language." }
+    },
+    "crops": {
+      "title": "Supported Crops",
+      "subtitle": "CropGuard AI covers the most important crops for Tigray agriculture",
+      "list": [
+        { "name": "Wheat", "diseases": "Stem Rust, Leaf Rust" },
+        { "name": "Teff", "diseases": "Leaf Blight, Smut" },
+        { "name": "Maize", "diseases": "Leaf Blight, Gray Leaf Spot" },
+        { "name": "Tomato", "diseases": "Late Blight, Bacterial Spot" },
+        { "name": "Potato", "diseases": "Early Blight, Late Blight" },
+        { "name": "Pepper", "diseases": "Bacterial Spot, Healthy" }
+      ]
+    },
+    "cta": {
+      "title": "Start Protecting Your Crops Today",
+      "subtitle": "Join farmers across Tigray using AI to safeguard their harvests. Free and accessible on any device.",
+      "button": "Create Free Account",
+      "secondary": "Browse Disease Guide"
+    }
+  },
+  "about": {
+    "hero": {
+      "title": "About CropGuard AI",
+      "subtitle": "A research project from Mekelle University's Institute of Technology, developed to empower Ethiopian farmers with AI-driven agricultural diagnostics."
+    },
+    "mission": {
+      "title": "Our Mission",
+      "text": "Agriculture constitutes the cornerstone of Ethiopia's economy, employing approximately 70–80% of the national workforce. In the Tigray region, smallholder subsistence farming of staple crops such as wheat, teff, maize, sorghum, barley, and lentils represents the primary livelihood for millions of households. CropGuard AI was created to address the critical gap in accessible, accurate, and multilingual plant disease detection tools for these farming communities.",
+      "quote": "Empowering every farmer — regardless of language or location — with the diagnostic power of AI."
+    },
+    "problem": {
+      "title": "The Problem We Solve",
+      "subtitle": "Four interconnected challenges face smallholder farmers in Tigray and across Ethiopia",
+      "items": [
+        { "title": "Expert Unavailability", "desc": "Agricultural extension officers and plant pathologists serve large, geographically dispersed rural populations, resulting in delayed or inaccessible consultations and uncontrolled disease spread." },
+        { "title": "Language Barriers", "desc": "Existing AI-based plant disease tools are developed exclusively in English, rendering them inaccessible to the millions of Ethiopian farmers who communicate in Amharic or Tigrinya." },
+        { "title": "Pesticide Misuse", "desc": "Misdiagnosis leads to the indiscriminate or incorrect application of pesticides, inflating production costs, polluting water sources, and accelerating resistance development." },
+        { "title": "Manual Diagnostic Error", "desc": "Visual identification of plant disease symptoms by non-expert farmers is frequently inaccurate, particularly in early disease stages where symptoms of distinct pathogens overlap." }
+      ]
+    },
+    "model": {
+      "title": "The Technology Behind CropGuard AI",
+      "text": "CropGuard AI uses MobileNetV2 — a lightweight convolutional neural network optimized for mobile and web deployment, developed by Google. Pre-trained on ImageNet's 1.28 million images, then fine-tuned on a curated dataset of 14,559 plant disease images from the PlantVillage repository, supplemented with locally collected Tigray field images, the model achieves 93.7% validation accuracy across 10 disease classes. The architecture's inverted residual blocks and depthwise separable convolutions allow fast inference even on resource-constrained servers.",
+      "stats": [
+        { "label": "Training Images", "value": "14,559" },
+        { "label": "Disease Classes", "value": "10" },
+        { "label": "Model Accuracy", "value": "93.7%" },
+        { "label": "Supported Crops", "value": "6" }
+      ],
+      "techStack": ["React.js Frontend", "Node.js / Express API", "Python FastAPI ML Service", "PostgreSQL Database", "MobileNetV2 Model", "i18next Multilingual"]
+    },
+    "comparison": {
+      "title": "How We Compare",
+      "subtitle": "CropGuard AI uniquely combines multilingual support, local crop coverage, and a prediction history dashboard",
+      "headers": ["Feature", "PlantVillage", "Plantix", "CropGuard AI"],
+      "rows": [
+        { "feature": "Real-Time Detection", "plantvillage": true, "plantix": true, "cropguard": true },
+        { "feature": "Amharic / Tigrinya", "plantvillage": false, "plantix": false, "cropguard": true },
+        { "feature": "AI Chat Assistant", "plantvillage": false, "plantix": false, "cropguard": true },
+        { "feature": "Tigray Crop Coverage", "plantvillage": false, "plantix": false, "cropguard": true },
+        { "feature": "Free & Open Access", "plantvillage": true, "plantix": true, "cropguard": true },
+        { "feature": "Prediction Dashboard", "plantvillage": false, "plantix": false, "cropguard": true }
+      ]
+    },
+    "team": {
+      "title": "The Research Team",
+      "subtitle": "Seven Bachelor of Information Technology graduates from Mekelle Institute of Technology who built CropGuard AI as their final thesis project.",
+      "members": [
+        { "name": "Niema Kedir", "role": "Team Lead & ML Engineer" },
+        { "name": "Halefom Hailu", "role": "Backend Developer" },
+        { "name": "Guesh Teklu", "role": "Frontend Developer" },
+        { "name": "Hadush Tsigabu", "role": "Database Engineer" },
+        { "name": "Kibrom Getachew", "role": "AI/ML Researcher" },
+        { "name": "Solomon G/cherkos", "role": "System Architect" },
+        { "name": "G/zgher Destalem", "role": "UI/UX Designer" }
+      ],
+      "supervisor": "Supervised by Ins. Gorge",
+      "institution": "Mekelle University – MIT, Department of Information Technology, Mekelle, Tigray, Ethiopia",
+      "year": "February 2026"
+    }
+  },
+  "contact": {
+    "hero": {
+      "title": "Contact Us",
+      "subtitle": "Have questions about CropGuard AI? We'd love to hear from farmers, researchers, and partners."
+    },
+    "form": {
+      "name": "Full Name",
+      "email": "Email Address",
+      "subject": "Subject",
+      "message": "Message",
+      "send": "Send Message",
+      "success": "Message sent successfully! We will get back to you soon.",
+      "namePlaceholder": "Your full name",
+      "emailPlaceholder": "your@email.com",
+      "subjectPlaceholder": "How can we help?",
+      "messagePlaceholder": "Write your message here..."
+    },
+    "info": {
+      "title": "Get in Touch",
+      "institution": "Mekelle Institute of Technology",
+      "department": "Department of Information Technology",
+      "location": "Mekelle, Tigray, Ethiopia",
+      "email": "cropguard@mekelle.edu.et",
+      "topics": {
+        "title": "Common Topics",
+        "items": ["Technical support for app usage", "Research collaboration inquiries", "Disease coverage expansion requests", "Feedback and bug reports", "Partnership opportunities"]
+      }
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "items": [
+        { "q": "Is CropGuard AI free to use?", "a": "Yes, CropGuard AI is completely free for all farmers and researchers." },
+        { "q": "Which crops does the system support?", "a": "We support Wheat, Teff, Maize, Tomato, Potato, and Pepper — the most common crops in the Tigray region." },
+        { "q": "Does the app work on mobile phones?", "a": "Yes, CropGuard AI is fully responsive and works on any modern smartphone or computer with a browser." },
+        { "q": "How accurate is the AI diagnosis?", "a": "Our MobileNetV2 model achieves 93.7% validation accuracy across 10 disease classes." }
+      ]
+    }
+  },
+  "diseases": {
+    "hero": {
+      "title": "Disease Encyclopedia",
+      "subtitle": "A comprehensive reference guide to crop diseases detected by CropGuard AI — with symptoms, causes, and treatment options."
+    },
+    "search": "Search diseases or crops...",
+    "filter": {
+      "all": "All Crops",
+      "wheat": "Wheat",
+      "maize": "Maize",
+      "tomato": "Tomato",
+      "potato": "Potato",
+      "pepper": "Pepper",
+      "teff": "Teff"
+    },
+    "severity": {
+      "high": "High Severity",
+      "medium": "Medium Severity",
+      "low": "Low Severity"
+    },
+    "labels": {
+      "symptoms": "Symptoms",
+      "causes": "Causes",
+      "treatment": "Treatment",
+      "prevention": "Prevention",
+      "chemical": "Chemical Treatment",
+      "organic": "Organic Treatment",
+      "crop": "Crop",
+      "severity": "Severity"
+    },
+    "list": [
+      {
+        "id": "wheat-stem-rust",
+        "name": "Wheat Stem Rust",
+        "crop": "Wheat",
+        "severity": "high",
+        "symptoms": "Orange-red to dark brown pustules on stems and leaves. Severely infected plants turn yellow and die prematurely. Heavy infections cause lodging and grain shriveling.",
+        "causes": "Caused by the fungus Puccinia graminis f.sp. tritici. Spreads via airborne urediniospores. Thrives in warm, humid conditions (15–25°C).",
+        "chemical": "Apply fungicides containing tebuconazole, propiconazole, or trifloxystrobin at first sign of infection. Repeat after 14 days if needed.",
+        "organic": "Use resistant wheat varieties. Remove infected crop debris. Avoid excessive nitrogen fertilization. Maintain field hygiene.",
+        "prevention": "Plant certified rust-resistant varieties. Monitor fields regularly from stem elongation stage. Early scouting is critical for control."
+      },
+      {
+        "id": "wheat-leaf-rust",
+        "name": "Wheat Leaf Rust",
+        "crop": "Wheat",
+        "severity": "medium",
+        "symptoms": "Small, circular to oval, orange-brown pustules scattered on leaf surfaces. Pustules are surrounded by yellow halo. Causes premature leaf death and yield loss.",
+        "causes": "Caused by Puccinia triticina. Spreads by wind-carried spores. Favored by cool, moist weather (15–22°C) with high humidity.",
+        "chemical": "Propiconazole-based or mancozeb fungicides applied at flag leaf stage. Timing is critical — treat before 5% leaf area infected.",
+        "organic": "Use resistant varieties (e.g., Ethiopia's improved CIMMYT lines). Crop rotation. Avoid overhead irrigation. Roguing infected plants.",
+        "prevention": "Select resistant cultivars. Timely planting to avoid peak infection periods. Balanced nutrition to strengthen plant immunity."
+      },
+      {
+        "id": "maize-leaf-blight",
+        "name": "Maize Northern Leaf Blight",
+        "crop": "Maize",
+        "severity": "high",
+        "symptoms": "Long, cigar-shaped, grayish-green to tan lesions (5–15 cm) on leaves. Lesions have wavy margins and turn brown as they expand. Entire leaves may die in severe cases.",
+        "causes": "Caused by the fungal pathogen Exserohilum turcicum. Thrives under cool, wet weather. Spores spread by wind and rain splash.",
+        "chemical": "Mancozeb, azoxystrobin, or propiconazole fungicides. Apply at early disease onset and repeat at 10–14 day intervals.",
+        "organic": "Plant resistant maize hybrids. Remove plant debris after harvest. Crop rotation with non-host species. Adequate plant spacing for airflow.",
+        "prevention": "Use certified resistant seed. Avoid dense planting. Balanced NPK fertilization. Regular field scouting during growing season."
+      },
+      {
+        "id": "maize-gray-leaf-spot",
+        "name": "Maize Gray Leaf Spot",
+        "crop": "Maize",
+        "severity": "medium",
+        "symptoms": "Rectangular, gray to tan lesions confined between leaf veins. Lesions appear water-soaked initially, then dry and gray. Severely affected leaves die early.",
+        "causes": "Caused by Cercospora zeae-maydis. Favored by high humidity (>90%), prolonged leaf wetness, and temperatures of 22–30°C.",
+        "chemical": "Azoxystrobin, pyraclostrobin, or trifloxystrobin fungicides. Apply at tasseling or at first sign of disease.",
+        "organic": "Resistant hybrids are the most effective control. Reduce crop residue through deep plowing. Crop rotation. Improve drainage to reduce humidity.",
+        "prevention": "Select resistant hybrids. Minimize crop residue on soil surface. Avoid continuous maize monoculture. Ensure good field drainage."
+      },
+      {
+        "id": "tomato-late-blight",
+        "name": "Tomato Late Blight",
+        "crop": "Tomato",
+        "severity": "high",
+        "symptoms": "Water-soaked lesions on leaves that rapidly enlarge, turning brown-black. White mold visible on leaf undersides in humid conditions. Fruit develops firm, brown, greasy rot.",
+        "causes": "Caused by Phytophthora infestans, an oomycete pathogen. Rapidly destructive in cool (10–20°C), wet, cloudy weather with high humidity (>90%).",
+        "chemical": "Metalaxyl + mancozeb, cymoxanil, or dimethomorph fungicides. Apply preventively every 7 days during wet season. Rotate fungicide classes.",
+        "organic": "Copper-based sprays (Bordeaux mixture). Remove infected tissue immediately. Stake plants for air circulation. Avoid wetting leaves.",
+        "prevention": "Plant in well-drained sites with good airflow. Use disease-free transplants. Mulch to prevent soil splash. Irrigate at base, not overhead."
+      },
+      {
+        "id": "tomato-bacterial-spot",
+        "name": "Tomato Bacterial Spot",
+        "crop": "Tomato",
+        "severity": "medium",
+        "symptoms": "Small, water-soaked spots on leaves that turn brown with yellow halos. Spots on fruit appear as raised scabs. Severe defoliation reduces fruit quality and yield.",
+        "causes": "Caused by Xanthomonas vesicatoria. Spreads through rain splash, contaminated tools, and infected seeds. Favored by warm, wet weather.",
+        "chemical": "Copper-based bactericides (copper hydroxide, copper oxychloride). Apply preventively. Combine with mancozeb for better efficacy.",
+        "organic": "Use certified disease-free seed. Hot-water seed treatment (50°C for 25 minutes). Avoid overhead irrigation. Remove infected plant material.",
+        "prevention": "Use resistant varieties. Disinfect tools and equipment. Avoid working in fields when plants are wet. Two-year crop rotation."
+      },
+      {
+        "id": "potato-late-blight",
+        "name": "Potato Late Blight",
+        "crop": "Potato",
+        "severity": "high",
+        "symptoms": "Brown-black lesions with water-soaked margins on leaves and stems. White mold on leaf undersides. Tubers develop reddish-brown, granular rot. Entire field can be destroyed within days.",
+        "causes": "Caused by Phytophthora infestans. The same pathogen responsible for the Irish Famine (1845). Spread by airborne sporangia. Severe in cool, wet conditions.",
+        "chemical": "Metalaxyl, propamocarb, cymoxanil, or amisulbrom. Apply preventively every 7–10 days. Rotate modes of action to prevent resistance.",
+        "organic": "Destroy infected tubers and haulms. Use disease-free certified seed. Hill soil over tubers to protect them. Copper fungicides as a supplement.",
+        "prevention": "Plant certified disease-free seed potatoes. Destroy cull piles. Ensure good drainage. Avoid overhead irrigation. Early harvest if disease appears."
+      },
+      {
+        "id": "pepper-bacterial-spot",
+        "name": "Pepper Bacterial Spot",
+        "crop": "Pepper",
+        "severity": "medium",
+        "symptoms": "Small, circular, water-soaked spots on leaves with yellow halos. Spots merge and cause leaf drop. Fruit shows raised, corky, scab-like lesions that reduce market value.",
+        "causes": "Caused by Xanthomonas euvesicatoria. Introduced through infected transplants or seeds. Spread by rain, insects, and contaminated tools.",
+        "chemical": "Copper hydroxide or copper oxychloride sprays. Apply at transplanting and repeat every 7–10 days during wet weather. Combine with mancozeb.",
+        "organic": "Start with certified clean transplants. Hot-water seed treatment. Remove and destroy infected plant debris. Avoid overhead irrigation.",
+        "prevention": "Use certified resistant varieties. Sanitize transplant trays and tools. Practice 2–3 year crop rotation. Avoid working in wet fields."
+      }
+    ]
+  },
+  "auth": {
+    "signin": {
+      "title": "Welcome Back",
+      "subtitle": "Sign in to access your crop disease dashboard",
+      "email": "Email Address",
+      "password": "Password",
+      "button": "Sign In",
+      "noAccount": "Don't have an account?",
+      "register": "Register here",
+      "backHome": "Back to Home"
+    },
+    "register": {
+      "title": "Create Account",
+      "subtitle": "Join CropGuard AI and protect your harvest",
+      "name": "Full Name",
+      "email": "Email Address",
+      "password": "Password",
+      "confirm": "Confirm Password",
+      "button": "Create Account",
+      "hasAccount": "Already have an account?",
+      "signin": "Sign in here",
+      "backHome": "Back to Home"
+    }
+  },
+  "dashboard": {
+    "title": "My Dashboard",
+    "backHome": "Back to Home",
+    "welcome": "Welcome back",
+    "stats": {
+      "totalScans": "Total Scans",
+      "diseased": "Diseased",
+      "healthy": "Healthy",
+      "thisMonth": "This Month"
+    },
+    "recentScans": "Recent Scans",
+    "noScans": "No scans yet. Upload your first leaf image to get started.",
+    "uploadNew": "Upload New Image"
+  },
+  "footer": {
+    "tagline": "AI-powered plant disease detection for Ethiopian farmers",
+    "links": "Quick Links",
+    "contact": "Contact",
+    "rights": "All rights reserved.",
+    "developed": "Developed at Mekelle University – MIT · February 2026"
+  }
+}

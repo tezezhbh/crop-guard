@@ -1,0 +1,332 @@
+{
+  "nav": {
+    "home": "መነሻ",
+    "about": "ስለ እኛ",
+    "contact": "ያግኙን",
+    "diseases": "የበሽታ መመሪያ",
+    "signin": "ግባ",
+    "register": "ተመዝገብ",
+    "dashboard": "ዳሽቦርድ",
+    "backHome": "ወደ መነሻ ተመለስ"
+  },
+  "home": {
+    "hero": {
+      "badge": "በ AI የሚሰራ ግብርና",
+      "title": "ሰብልዎን ከ CropGuard AI ጋር ይጠብቁ",
+      "subtitle": "ለኢትዮጵያ አነስተኛ ገበሬዎች የተዘጋጀ ብልጥ፣ ባለ ብዙ ቋንቋ ሰብል ችግር ምርምር ሥርዓት። የቅጠል ምስል ይጫኑ እና ወዲያውኑ የ AI ምርመራ ያግኙ።",
+      "getStarted": "ይጀምሩ (ነፃ)",
+      "learnMore": "የበሽታ መመሪያ ይዳስሱ",
+      "supportedCrops": "ስንዴ · ጤፍ · በቆሎ · ቲማቲም · ድንች · ፍርሻ ይደግፋል"
+    },
+    "stats": {
+      "accuracy": "93.7%",
+      "accuracyLabel": "የሞዴል ትክክለኛነት",
+      "diseases": "10+",
+      "diseasesLabel": "የበሽታ ክፍሎች",
+      "languages": "3",
+      "languagesLabel": "ቋንቋዎች",
+      "farmers": "ትግራይ",
+      "farmersLabel": "ዋና ክልል"
+    },
+    "features": {
+      "title": "ለምን CropGuard AI?",
+      "subtitle": "ለኢትዮጵያ አነስተኛ ገበሬዎች ልዩ ሆኖ የተሠራ — ትክክለኛ፣ ተደራሽ እና ባለ ብዙ ቋንቋ።",
+      "ai": { "title": "AI የበሽታ ምርምር", "desc": "MobileNetV2 ሞዴል ካብ 14,559 ምስሎች ዝሰልጠነ 93.7% ትክክለኛነት ያስምዘግባል።" },
+      "multilingual": { "title": "3 ቋንቋ ድጋፍ", "desc": "ለእንግሊዝኛ፣ አማርኛ፣ ትግርኛ ሙሉ ድጋፍ — ለኢትዮጵያ ገበሬዎች የቋንቋ እንቅፋቶችን ያስወግዳል።" },
+      "instant": { "title": "ፈጣን ውጤቶች", "desc": "የቅጠል ፎቶ ይጫኑ፤ ሕክምና ምክሮችን ጨምሮ ምርመራ ያግኙ።" },
+      "history": { "title": "የምርምር ታሪክ", "desc": "ሁሉንም ምርምሮችዎን ይከታተሉ። ዓመቱ ሙሉ የበሽታ አዝማሚያዎቹን ይቆጣጠሩ።" },
+      "chat": { "title": "AI ምክር ረዳት", "desc": "ስለ ምርዎ ያለው ጥያቄ ሁሉ ይጠይቁ። ፈጣን እና ትክክለኛ ምክር ይቀበሉ።" },
+      "crops": { "title": "የአካባቢ ሰብሎች ሽፋን", "desc": "ስንዴ፣ ጤፍ፣ በቆሎ፣ ቲማቲም፣ ድንች፣ ፍርሻ።" }
+    },
+    "howItWorks": {
+      "title": "እንዴት ይሰራል",
+      "subtitle": "ሰብልዎን ለመጠበቅ ሦስት ቀላል እርምጃዎች",
+      "step1": { "title": "የቅጠል ፎቶ ይጫኑ", "desc": "የታመመውን ሰብል ቅጠል ፎቶ ያንሱ፤ ከስልክ ወይም ኮምፒዩተር ይጫኑ።" },
+      "step2": { "title": "AI ምርምር", "desc": "ሞዴሉ ምስሉን ያጠናና 93.7% ትክክለኛነት ባለው ሁኔታ ይለያቸዋል።" },
+      "step3": { "title": "ምክሮች ያግኙ", "desc": "የበሽታ ስም፣ ትክክለኛነት ውጤት፣ ሕክምና ዘዴዎች ያግኙ።" }
+    },
+    "crops": {
+      "title": "የሚደገፉ ሰብሎች",
+      "subtitle": "CropGuard AI ለትግራይ ሕርሻ ዋና ሰብሎች ሽፋን ይሰጣል",
+      "list": [
+        { "name": "ስንዴ", "diseases": "ግንድ ዝገት፣ ቅጠል ዝገት" },
+        { "name": "ጤፍ", "diseases": "ቅጠል ብሌን፣ ሰሰ" },
+        { "name": "በቆሎ", "diseases": "ቅጠል ብሌን፣ ግራጫ ቅጠል ነጥብ" },
+        { "name": "ቲማቲም", "diseases": "ዘግይቶ ብሌን፣ ባክቴሪያ ነጥብ" },
+        { "name": "ድንች", "diseases": "ቀደምቶ ብሌን፣ ዘግይቶ ብሌን" },
+        { "name": "ፍርሻ", "diseases": "ባክቴሪያ ነጥብ፣ ጤናማ" }
+      ]
+    },
+    "cta": {
+      "title": "ሰብልዎን ከዛሬ ጀምሮ ይጠብቁ",
+      "subtitle": "ሰብሉን ለማዳን AI ሲጠቀሙ ካሉ ገበሬዎች ጋር ይቀላቀሉ። ነፃ፣ ማንኛውም መሳሪያ።",
+      "button": "ነፃ ሂሳብ ይፍጠሩ",
+      "secondary": "የበሽታ መመሪያ ዳስሱ"
+    }
+  },
+  "about": {
+    "hero": {
+      "title": "ስለ CropGuard AI",
+      "subtitle": "ከሜቀሌ ዩኒቨርሲቲ ቴክኖሎጂ ኢንስቲቱት — ለኢትዮጵያ ገበሬዎች የ AI ምርምርን ለማቅረብ።"
+    },
+    "mission": {
+      "title": "ተልዕኮአችን",
+      "text": "ግብርና የኢትዮጵያ ኢኮኖሚ ዋና ምሰሶ ሲሆን 70-80% ሠራተኞቹን ያካትታል። ለትግራይ ክልል አነስተኛ ገበሬዎች ተደራሽ፣ ትክክለኛ፣ ባለ ብዙ ቋንቋ የሆነ የሰብል ሕማም ምርምር መሣሪያ እንዲኖር CropGuard AI ተፈጠረ።",
+      "quote": "ጥበቃ ለሁሉም ገበሬ — ቋንቋ ወይም ቦታ ሳይቆጠር — ይህ ተልዕኮአችን ነው።"
+    },
+    "problem": {
+      "title": "የምንፈታቸው ችግሮች",
+      "subtitle": "በኢትዮጵያ አነስተኛ ገበሬዎች ፊት ያሉ ዋና ችግሮች",
+      "items": [
+        { "title": "ባለሙያዎች አለመኖር", "desc": "የግብርና ዘርፍ ባለሙያዎች ሰፊ ገጠሩን ሲያስተዳድሩ ዘዋይ ምክር አይኖርም።" },
+        { "title": "የቋንቋ እንቅፋቶች", "desc": "ያሉ AI መሣሪያዎች ሁሉ በእንግሊዝኛ ብቻ ስለሆኑ ለአማርኛ እና ትግርኛ ተናጋሪዎች አልደረሱም።" },
+        { "title": "የፀረ ተባይ አላግባብ አጠቃቀም", "desc": "ስህተተኛ ምርምር ተገቢ ያልሆነ ፀረ ተባይ አጠቃቀምን ያስከትላል።" },
+        { "title": "የምርምር ስህተቶች", "desc": "ባለሙያ ባልሆኑ ገበሬዎች ዓይናዊ ምርምር ብዙ ጊዜ ስህተተኛ ነው።" }
+      ]
+    },
+    "model": {
+      "title": "ቴክኖሎጂ",
+      "text": "CropGuard AI MobileNetV2 ይጠቀማል — ከ14,559 ምስሎች ተሠልጥኖ 93.7% ትክክለኛነት ያሳካል።",
+      "stats": [
+        { "label": "የሥልጠና ምስሎች", "value": "14,559" },
+        { "label": "የበሽታ ክፍሎች", "value": "10" },
+        { "label": "የሞዴል ትክክለኛነት", "value": "93.7%" },
+        { "label": "የሚደገፉ ሰብሎች", "value": "6" }
+      ],
+      "techStack": ["React.js ፍሮንትኤንድ", "Node.js / Express API", "Python FastAPI ML", "PostgreSQL ዳታቤዝ", "MobileNetV2 ሞዴል", "i18next ባለ ብዙ ቋንቋ"]
+    },
+    "comparison": {
+      "title": "እንዴት እናወዳድራለን",
+      "subtitle": "CropGuard AI ብቸኛ የባለ ብዙ ቋንቋ ድጋፍ፣ የአካባቢ ሰብሎች ሽፋን፣ የምርምር ዳሽቦርድ ይሰጣል",
+      "headers": ["ባህሪ", "PlantVillage", "Plantix", "CropGuard AI"],
+      "rows": [
+        { "feature": "ቅጽበታዊ ምርምር", "plantvillage": true, "plantix": true, "cropguard": true },
+        { "feature": "አማርኛ / ትግርኛ", "plantvillage": false, "plantix": false, "cropguard": true },
+        { "feature": "AI ምክር ረዳት", "plantvillage": false, "plantix": false, "cropguard": true },
+        { "feature": "የትግራይ ሰብሎች", "plantvillage": false, "plantix": false, "cropguard": true },
+        { "feature": "ነፃ ዘዴ", "plantvillage": true, "plantix": true, "cropguard": true },
+        { "feature": "ታሪክ ዳሽቦርድ", "plantvillage": false, "plantix": false, "cropguard": true }
+      ]
+    },
+    "team": {
+      "title": "የምርምር ቡድን",
+      "subtitle": "ሰባት የቴክኖሎጂ ዲፓርትመንት ምሩቃን ይህን ፕሮጀክት ሠሩ።",
+      "members": [
+        { "name": "ኒማ ቃድር", "role": "ቡድን መሪ እና ML ምሃንዲስ" },
+        { "name": "ሃለፎም ሃይሉ", "role": "ባክኤንድ ፕሮግራሜር" },
+        { "name": "ጉዕሽ ተክሉ", "role": "ፍሮንትኤንድ ፕሮግራሜር" },
+        { "name": "ሃዱሽ ፅጋቡ", "role": "የዳታቤዝ ምሃንዲስ" },
+        { "name": "ክብሮም ጌጣቸው", "role": "AI/ML ተመራማሪ" },
+        { "name": "ሰሎሞን ግ/ጭርቆስ", "role": "ሲስተም አርቴክት" },
+        { "name": "ግ/ዝሔር ደስታለም", "role": "UI/UX ዲዛይነር" }
+      ],
+      "supervisor": "Ins. ጆርጅ ኃላፊ",
+      "institution": "ሜቀሌ ዩኒቨርሲቲ – MIT, የኢንፎርሜሽን ቴክኖሎጂ ዲፓርትመንት",
+      "year": "የካቲት 2026"
+    }
+  },
+  "contact": {
+    "hero": {
+      "title": "ያግኙን",
+      "subtitle": "ስለ CropGuard AI ጥያቄዎች አሉዎት? ሰምቶ ምላሽ ለመስጠት ዝግጁ ነን።"
+    },
+    "form": {
+      "name": "ሙሉ ስም",
+      "email": "ኢሜይል አድራሻ",
+      "subject": "ርዕስ",
+      "message": "መልዕክት",
+      "send": "መልዕክት ላክ",
+      "success": "መልዕክቱ ተላከ! በቅርቡ እናገኝዎታለን።",
+      "namePlaceholder": "ሙሉ ስምዎ",
+      "emailPlaceholder": "your@email.com",
+      "subjectPlaceholder": "እንዴት ልንረዳዎ?",
+      "messagePlaceholder": "መልዕክትዎን ይፃፉ..."
+    },
+    "info": {
+      "title": "ያግኙን",
+      "institution": "ሜቀሌ ቴክኖሎጂ ኢንስቲቱት",
+      "department": "የኢንፎርሜሽን ቴክኖሎጂ ዲፓርትመንት",
+      "location": "ሜቀሌ፣ ትግራይ፣ ኢትዮጵያ",
+      "email": "cropguard@mekelle.edu.et",
+      "topics": {
+        "title": "ዋና ርዕሶች",
+        "items": ["ቴክኒካዊ ድጋፍ", "የምርምር ትብብር", "ሰብሎች ሽፋን", "አስተያየቶች", "አጋርነት"]
+      }
+    },
+    "faq": {
+      "title": "ተደጋጋሚ ጥያቄዎች",
+      "items": [
+        { "q": "CropGuard AI ነፃ ነው?", "a": "አዎ፣ ሙሉ በሙሉ ነፃ ነው።" },
+        { "q": "የትኞቹ ሰብሎች ይደገፋሉ?", "a": "ስንዴ፣ ጤፍ፣ በቆሎ፣ ቲማቲም፣ ድንች፣ ፍርሻ።" },
+        { "q": "ስልክ ላይ ይሰራል?", "a": "አዎ፣ ማናቸውም ዘመናዊ ስልክ ወይም ኮምፒዩተር ይሰራል።" },
+        { "q": "AI ምርምሩ ምን ያህል ትክክለኛ ነው?", "a": "93.7% ትክክለኛነት ያሳካል።" }
+      ]
+    }
+  },
+  "diseases": {
+    "hero": {
+      "title": "የበሽታ ኢንሳይክሎፒዲያ",
+      "subtitle": "CropGuard AI ለሚለይቸው የሰብል ሕማሞች ሙሉ ማጣቀሻ — ምልክቶች፣ ምክንያቶች፣ ሕክምና ዘዴዎች ጨምሮ።"
+    },
+    "search": "ሕማሞች ወይም ሰብሎች ይፈልጉ...",
+    "filter": {
+      "all": "ሁሉም ሰብሎች",
+      "wheat": "ስንዴ",
+      "maize": "በቆሎ",
+      "tomato": "ቲማቲም",
+      "potato": "ድንች",
+      "pepper": "ፍርሻ",
+      "teff": "ጤፍ"
+    },
+    "severity": {
+      "high": "ከፍተኛ ጠቃሚነት",
+      "medium": "መካከለኛ ጠቃሚነት",
+      "low": "ዝቅተኛ ጠቃሚነት"
+    },
+    "labels": {
+      "symptoms": "ምልክቶች",
+      "causes": "ምክንያቶች",
+      "treatment": "ሕክምና",
+      "prevention": "መከላከያ",
+      "chemical": "ኬሚካዊ ሕክምና",
+      "organic": "ተፈጥሮአዊ ሕክምና",
+      "crop": "ሰብል",
+      "severity": "ጠቃሚነት"
+    },
+    "list": [
+      {
+        "id": "wheat-stem-rust",
+        "name": "የስንዴ ግንድ ዝገት",
+        "crop": "ስንዴ",
+        "severity": "high",
+        "symptoms": "ብርቱካናማ-ቀይ እስከ ጥቁር ቡናይ ፑስቱሎች በግንዶች እና ቅጠሎች ላይ። ከፍተኛ ኢንፌክሽን ብቅል ሰብልን ሊያዳክምና ሊደርቅ ይችላል።",
+        "causes": "ፈንጋይ Puccinia graminis f.sp. tritici ያስከትለዋል። ሞቃት፣ እርጥብ ሁኔታዎች (15–25°C) ይጠቅማሉ።",
+        "chemical": "ቴቡኮናዞል፣ ፕሮፒኮናዞል ወይም ትሪፍሎክሲስቶቢን የያዙ ፈንጋይ ሕክምናዎች። ምልክቶቹ ሲጀምሩ ይጠቀሙ።",
+        "organic": "ዝገት-ተከላካይ ዝርያዎች ይጠቀሙ። የታመሙ ሰብሎችን ያስወግዱ።",
+        "prevention": "የተረጋገጡ ዝገት-ተከላካይ ዝርያዎች ይተክሉ። ሜዳዎቹን ይቆጣጠሩ።"
+      },
+      {
+        "id": "wheat-leaf-rust",
+        "name": "የስንዴ ቅጠል ዝገት",
+        "crop": "ስንዴ",
+        "severity": "medium",
+        "symptoms": "ትንሽ፣ ክብ ወይም ሞላላ፣ ብርቱካናማ-ቡናይ ፑስቱሎች በቅጠሎቹ ላይ። ቅጠሎቹ ቀደም ሰናዲ ሊሞቱ ይችላሉ።",
+        "causes": "Puccinia triticina ፈንጋይ ያስከትለዋል። ቀዝቃዛ፣ እርጥብ የአየር ሁኔታ (15–22°C) ይፈልጋል።",
+        "chemical": "ፕሮፒኮናዞል ወይም ማንኮዜብ ፈንጋይ ሕክምናዎች።",
+        "organic": "ተከላካይ ዝርያዎች ይጠቀሙ። ሰብሎቹን ይለዋወጡ።",
+        "prevention": "ተከላካይ ዝርያዎች ይምረጡ። ሜዳዎቹን በጊዜ ይቆጣጠሩ።"
+      },
+      {
+        "id": "maize-leaf-blight",
+        "name": "የበቆሎ ሰሜናዊ ቅጠል ብሌን",
+        "crop": "በቆሎ",
+        "severity": "high",
+        "symptoms": "ረዣዥም፣ ሲጋራ-ቅርፅ፣ ግራጫ-አረንጓዴ እስከ ቡናይ ቁስሎች (5–15 ሳ.ሜ)። ቅጠሎቹ ሙሉ በሙሉ ሊሞቱ ይችላሉ።",
+        "causes": "Exserohilum turcicum ፈንጋይ ያስከትለዋል። ቀዝቃዛ፣ እርጥብ የአየር ሁኔታ ያሰፋዋል።",
+        "chemical": "ማንኮዜብ፣ አዞክሲስትሮቢን፣ ወይም ፕሮፒኮናዞል ፈንጋይ ሕክምናዎች።",
+        "organic": "ተከላካይ ሃይብሪድ ዝርያዎች ይጠቀሙ። ሰብሎቹን ይለዋወጡ።",
+        "prevention": "የተረጋገጠ ዘር ይጠቀሙ። ጥቅጥቅ ያለ ዝርያ አይዝሩ።"
+      },
+      {
+        "id": "maize-gray-leaf-spot",
+        "name": "የበቆሎ ግራጫ ቅጠል ነጥብ",
+        "crop": "በቆሎ",
+        "severity": "medium",
+        "symptoms": "የቅጠሉን ደም ሥሮች ተከትሎ የሚሄዱ አራት ማዕዘናዊ ግራጫ-ቡናይ ቁስሎች። ቅጠሎቹ ቀደም ሰናዲ ሊሞቱ ይችላሉ።",
+        "causes": "Cercospora zeae-maydis ፈንጋይ። ከፍተኛ እርጥበት (>90%) ይፈልጋል።",
+        "chemical": "አዞክሲስትሮቢን፣ ፒራክሎስቶቢን ፈንጋይ ሕክምናዎች።",
+        "organic": "ተከላካይ ሃይብሪድ ዝርያዎች። ሰብሎቹን ይለዋወጡ።",
+        "prevention": "ተከላካይ ዝርያዎች ይምረጡ። ቅሪት ሰብሎቹን ያስወግዱ።"
+      },
+      {
+        "id": "tomato-late-blight",
+        "name": "የቲማቲም ዘግይቶ ብሌን",
+        "crop": "ቲማቲም",
+        "severity": "high",
+        "symptoms": "በቅጠሎቹ ላይ የውሃ ጥምቀት የሚቀዳ ቁስሎች ቀጥሎ ቡናይ-ጥቁር ሆናሉ። በቅጠሉ ስር ነጭ ሻጋታ ይታያል። ፍሬዎቹ ቡናይ ይሆናሉ።",
+        "causes": "Phytophthora infestans (ኦሚሴቴ) ያስከትለዋል። ቀዝቃዛ (10–20°C) እና እርጥብ ሁኔታ ሲሆን ይፈጣጠናል።",
+        "chemical": "ሜታሃሊል + ማንኮዜብ፣ ሲሞክሳኒል ፈንጋይ ሕክምናዎች።",
+        "organic": "ዕቃ ቅጠሎቹን ወዲያውኑ ያስወግዱ። ከቦርዶ ድብልቅ ይረጩ።",
+        "prevention": "ዝናብ ሳይዘንብ ቅጠሉን አያርጡ። ተክሎቹን ያቆሙ።"
+      },
+      {
+        "id": "tomato-bacterial-spot",
+        "name": "የቲማቲም ባክቴሪያ ነጥብ",
+        "crop": "ቲማቲም",
+        "severity": "medium",
+        "symptoms": "በቅጠሎቹ ላይ ቢጫ ሃሎ ያለቸው ትንሽ ቡናይ ቦታዎች። ፍሬዎቹ ላይ ቦታ ቦታ ይታያሉ።",
+        "causes": "Xanthomonas vesicatoria ባክቴሪያ። ዝናብ እና ሙቀት ሲሆን ይፋፋሙ።",
+        "chemical": "ዶሮ ሀምሌ (copper-based bactericides) ፣ ማንኮዜብ ጋር አዋህደው።",
+        "organic": "ከሙቀት ዘር ሕክምና (50°C 25 ደቂቃ) ይጀምሩ። ዝናብ ቅጠሉን አያርጡ።",
+        "prevention": "ሁለት ዓመት ሰብሎቹን ይለዋወጡ። መሣሪያዎቹን ያጸዱ።"
+      },
+      {
+        "id": "potato-late-blight",
+        "name": "የድንች ዘግይቶ ብሌን",
+        "crop": "ድንች",
+        "severity": "high",
+        "symptoms": "ቅጠሎቹ እና ግንዶቹ ላይ ቡናይ-ጥቁር ቁስሎች። ስር ነጭ ሻጋታ ይታያል። ድንቹ ቡናይ ይሆናሉ።",
+        "causes": "Phytophthora infestans። ቀዝቃዛ፣ እርጥብ ሁኔታ ያስፋፋዋል።",
+        "chemical": "ሜታሃሊል፣ ፕሮፓሞካርብ ወይም ሲሞክሳኒል ፈንጋይ ሕክምናዎች።",
+        "organic": "የታመሙ ቅሪቶቹን ያቃጥሉ ወይም ያስወግዱ። የተረጋገጠ ዘር ይጠቀሙ።",
+        "prevention": "ምደባ ዘር ይጠቀሙ። ጥሩ ፍሳሽ ያስፈጥሩ። ቀደም ሰናዲ ሰብሎቹን ይሰብስቡ።"
+      },
+      {
+        "id": "pepper-bacterial-spot",
+        "name": "የፍርሻ ባክቴሪያ ነጥብ",
+        "crop": "ፍርሻ",
+        "severity": "medium",
+        "symptoms": "ቢጫ ሃሎ ያለቸው ቦታዎች፣ ቅጠሎቹ ሊወድቁ ይችላሉ። ፍሬዎቹ ላይ ቦታ ቦታ ይታያሉ።",
+        "causes": "Xanthomonas euvesicatoria ባክቴሪያ።",
+        "chemical": "የዶሮ ሃምሌ ወይም copper hydroxide ፣ ማንኮዜብ ጋር አዋህደው።",
+        "organic": "ምደባ ተክሎቹን ይጠቀሙ። ዝናብ ቅጠሉን አያርጡ።",
+        "prevention": "ሶስት ዓመት ሰብሎቹን ይለዋወጡ። መሣሪያዎቹን ያጸዱ።"
+      }
+    ]
+  },
+  "auth": {
+    "signin": {
+      "title": "እንኳን ደህና መጡ",
+      "subtitle": "ዳሽቦርድዎ ለማግኘት ይግቡ",
+      "email": "ኢሜይል አድራሻ",
+      "password": "ይለፍ ቃል",
+      "button": "ግባ",
+      "noAccount": "ሂሳብ የለዎትም?",
+      "register": "ይመዝገቡ",
+      "backHome": "ወደ መነሻ ተመለስ"
+    },
+    "register": {
+      "title": "ሂሳብ ይፍጠሩ",
+      "subtitle": "ሰብልዎን ለመጠበቅ ይቀላቀሉ",
+      "name": "ሙሉ ስም",
+      "email": "ኢሜይል አድራሻ",
+      "password": "ይለፍ ቃል",
+      "confirm": "ይለፍ ቃሉን ያረጋግጡ",
+      "button": "ሂሳብ ይፍጠሩ",
+      "hasAccount": "ሂሳብ አለዎት?",
+      "signin": "ይግቡ",
+      "backHome": "ወደ መነሻ ተመለስ"
+    }
+  },
+  "dashboard": {
+    "title": "ዳሽቦርዴ",
+    "backHome": "ወደ መነሻ ተመለስ",
+    "welcome": "እንኳን ደህና መጡ",
+    "stats": {
+      "totalScans": "ጠቅላላ ምርምሮች",
+      "diseased": "ታሟል",
+      "healthy": "ጤናማ",
+      "thisMonth": "ይህ ወር"
+    },
+    "recentScans": "የቅርቡ ምርምሮች",
+    "noScans": "ምርምር የለም። የመጀመሪያ ቅጠል ምስልዎን ይጫኑ።",
+    "uploadNew": "አዲስ ምስል ይጫኑ"
+  },
+  "footer": {
+    "tagline": "ለኢትዮጵያ ገበሬዎች AI-የሚሰራ ሰብል ምርምር",
+    "links": "ፈጣን አገናኞች",
+    "contact": "ያግኙን",
+    "rights": "መብቶች ሁሉ የተጠበቁ ናቸው።",
+    "developed": "ሜቀሌ ዩኒቨርሲቲ – MIT · የካቲት 2026"
+  }
+}

@@ -1,0 +1,332 @@
+{
+  "nav": {
+    "home": "መበገሲ",
+    "about": "ብዛዕባና",
+    "contact": "ተወከሉና",
+    "diseases": "ናይ ሕማም መምርሒ",
+    "signin": "እቶ",
+    "register": "ተምዝገቡ",
+    "dashboard": "ዳሽቦርድ",
+    "backHome": "ናብ መበገሲ ተመለሱ"
+  },
+  "home": {
+    "hero": {
+      "badge": "ብ AI ዝስርሕ ሕርሻ",
+      "title": "ሕርሽኹም ምስ CropGuard AI ሓልዉ",
+      "subtitle": "ንናኣሽቱ ሓረስቶት ኢትዮጵያ — ናይ ቅጠል ስእሊ ክፈቱ ቅጽበታዊ ምርምር ይርከቡ።",
+      "getStarted": "ጀምሩ (ናጻ)",
+      "learnMore": "ናይ ሕማም መምርሒ ዳስሱ",
+      "supportedCrops": "ስርናይ · ጣፍ · ሽምብራ · ቲማቲም · ድንሽ · ፎሮ ይድግፍ"
+    },
+    "stats": {
+      "accuracy": "93.7%",
+      "accuracyLabel": "ናይ ሞዴል ትኽክለኛነት",
+      "diseases": "10+",
+      "diseasesLabel": "ናይ ሕማም ዓይነታት",
+      "languages": "3",
+      "languagesLabel": "ቋንቋታት",
+      "farmers": "ትግራይ",
+      "farmersLabel": "ዋና ዞባ"
+    },
+    "features": {
+      "title": "ስለምንታይ CropGuard AI?",
+      "subtitle": "ንናኣሽቱ ሓረስቶት ኢትዮጵያ ፍሉይ ዝተሰርሐ — ትኽክለኛ፣ ናጻ፣ ባዙ ቋንቋ።",
+      "ai": { "title": "AI ናይ ሕማም ምርምር", "desc": "MobileNetV2 ሞዴል ካብ 14,559 ስእልታት 93.7% ትኽክለኛነት ኣርኢዩ።" },
+      "multilingual": { "title": "3 ቋንቋ ደገፍ", "desc": "ንእንግሊዝኛ፣ አማርኛ፣ ትግርኛ — ናይ ቋንቋ ዕንቅፋታት ይቕርብ።" },
+      "instant": { "title": "ቅጽበታዊ ውጽኢት", "desc": "ስእሊ ክፈቱ ኣብ ቅጽበት ምርምር ምሕክምናዊ ምኽሪ ሓቢሩ ይርከቡ።" },
+      "history": { "title": "ታሪኽ ምርምር", "desc": "ዝሓለፈ ምርምርኹም ኣብ ዳሽቦርድ ቆጻጸሩ።" },
+      "chat": { "title": "AI ምኽሪ ኣገልጋሊ", "desc": "ብዛዕባ ሕርሽኹም ዝሓዝዎ ሕቶ ሕተቱ ቅጽበታዊ ምኽሪ ይርከቡ።" },
+      "crops": { "title": "ናይ ከባቢ ሕርሽ ሽፋን", "desc": "ስርናይ፣ ጣፍ፣ ሽምብራ፣ ቲማቲም፣ ድንሽ፣ ፎሮ።" }
+    },
+    "howItWorks": {
+      "title": "ከመይ ይሰርሕ",
+      "subtitle": "ሕርሽኹም ንምሕላው ሰለስተ ቀሊል ስጉምቲ",
+      "step1": { "title": "ናይ ቅጠል ፎቶ ክፈቱ", "desc": "ናይ ዝሓመመ ሕርሽ ቅጠል ፎቶ ካብ ስልክ ወይ ኮምፒዩተርኩም ክፈቱ።" },
+      "step2": { "title": "AI ምርምር", "desc": "ሞዴልና ስእሊ ሰናዲ 93.7% ትኽክለኛነት ዘለዎ ምርምር ይህብ።" },
+      "step3": { "title": "ምኽሪ ርኸቡ", "desc": "ናይ ሕማም ስም፣ ምትኽካዕ ነጥቢ፣ ምሕክምናዊ ምኽሪ ይርከቡ።" }
+    },
+    "crops": {
+      "title": "ዝድገፉ ሕርሽታት",
+      "subtitle": "CropGuard AI ንዋና ሕርሽታት ትግራይ ይሽፍን",
+      "list": [
+        { "name": "ስርናይ", "diseases": "ናይ ምሶ ዝቋ፣ ናይ ቅጠል ዝቋ" },
+        { "name": "ጣፍ", "diseases": "ናይ ቅጠል ብሌን፣ ስሙት" },
+        { "name": "ሽምብራ", "diseases": "ናይ ቅጠል ብሌን፣ ግሩም ቅጠል ነጠብጣብ" },
+        { "name": "ቲማቲም", "diseases": "ድሕሪ ብሌን፣ ናይ ባክቴሪያ ነጠብጣብ" },
+        { "name": "ድንሽ", "diseases": "ቅድሚ ብሌን፣ ድሕሪ ብሌን" },
+        { "name": "ፎሮ", "diseases": "ናይ ባክቴሪያ ነጠብጣብ፣ ጥዑይ" }
+      ]
+    },
+    "cta": {
+      "title": "ሕርሽኹም ካብ ሎሚ ሓልዉ",
+      "subtitle": "ምስ ሓረስቶት ትግራይ ተጸምበሩ። ናጻ ኣብ ዝኾነ መሳርሒ ይርከቡ።",
+      "button": "ናጻ ሕሳብ ፍጠሩ",
+      "secondary": "ናይ ሕማም መምርሒ ዳስሱ"
+    }
+  },
+  "about": {
+    "hero": {
+      "title": "ብዛዕባ CropGuard AI",
+      "subtitle": "ካብ ሜቀሌ ዩኒቨርሲቲ ቴክኖሎጂ ኢንስቲቱት — ንሓረስቶት ኢትዮጵያ ብ AI ምርምር ንምቕራብ።"
+    },
+    "mission": {
+      "title": "ዕላማና",
+      "text": "ሕርሻ ናይ ኢትዮጵያ ቁጠባ ዋና ምሰሶ ኮይኑ 70-80% ሰራሕተኛታት ይሸፍን። ንናኣሽቱ ሓረስቶት ትግራይ ናጻ፣ ትኽክለኛ፣ ባዙ ቋንቋ ናይ ሕርሽ ሕማም ምርምር ንምቕራብ CropGuard AI ተፈጢሩ።",
+      "quote": "ንኩሉ ሓረስታይ — ቋንቋ ወይ ቦታ ከይቆጸርካ — ምሕላው ዕላማና እዩ።"
+    },
+    "problem": {
+      "title": "ናይ ዝፈትሖ ጸገማት",
+      "subtitle": "ኣብ ኢትዮጵያ ናኣሽቱ ሓረስቶት ዝጋጥሙ ዋና ጸገማት",
+      "items": [
+        { "title": "ናይ ሙያ ዕጽፊ", "desc": "ናይ ሕርሻ ሙሃሮ ሰፊሕ ከባቢ ይሕዙ ናሕሲ ምኽሪ ኣይርከቡን።" },
+        { "title": "ቋንቋዊ ዕንቅፋታት", "desc": "ዘለዉ AI መሳርሕታት ብእንግሊዝኛ ጥራይ ስለዝኾኑ ኣይበጽሑን።" },
+        { "title": "ዘይቅኑዕ ፀረ-ሓርሰፍ ጥቃሜ", "desc": "ጌጋ ምርምር ዘይቅኑዕ ፀረ-ሓርሰፍ ጥቃሜ የኸትል።" },
+        { "title": "ናይ ምርምር ጌጋ", "desc": "ብዘይ ሙያ ሓረስቶት ዓይናዊ ምርምር ቁጽሩ ጌጋ እዩ።" }
+      ]
+    },
+    "model": {
+      "title": "ቴክኖሎጂ",
+      "text": "CropGuard AI MobileNetV2 ይጥቀም ካብ 14,559 ስእልታት ዝሰልጠነ 93.7% ትኽክለኛነት ኣርኢዩ።",
+      "stats": [
+        { "label": "ናይ ስልጠና ስእልታት", "value": "14,559" },
+        { "label": "ናይ ሕማም ዓይነታት", "value": "10" },
+        { "label": "ናይ ሞዴል ትኽክለኛነት", "value": "93.7%" },
+        { "label": "ዝድገፉ ሕርሽታት", "value": "6" }
+      ],
+      "techStack": ["React.js ፍሮንትኤንድ", "Node.js / Express API", "Python FastAPI ML", "PostgreSQL ዳታቤዝ", "MobileNetV2 ሞዴል", "i18next ባዙ ቋንቋ"]
+    },
+    "comparison": {
+      "title": "ብኸመይ ንወዳደር",
+      "subtitle": "CropGuard AI ናይ ባዙ ቋንቋ ደገፍ፣ ናይ ከባቢ ሕርሽ ሽፋን፣ ታሪኽ ዳሽቦርድ ይህብ",
+      "headers": ["ባህሪ", "PlantVillage", "Plantix", "CropGuard AI"],
+      "rows": [
+        { "feature": "ቅጽበታዊ ምርምር", "plantvillage": true, "plantix": true, "cropguard": true },
+        { "feature": "አማርኛ / ትግርኛ", "plantvillage": false, "plantix": false, "cropguard": true },
+        { "feature": "AI ምኽሪ ኣገልጋሊ", "plantvillage": false, "plantix": false, "cropguard": true },
+        { "feature": "ናይ ትግራይ ሕርሽ", "plantvillage": false, "plantix": false, "cropguard": true },
+        { "feature": "ናጻ ዘዴ", "plantvillage": true, "plantix": true, "cropguard": true },
+        { "feature": "ታሪኽ ዳሽቦርድ", "plantvillage": false, "plantix": false, "cropguard": true }
+      ]
+    },
+    "team": {
+      "title": "ናይ ምርምር ጉጅለ",
+      "subtitle": "ሰብዓተ ናብ IT ዲፓርትመንት ዝምረቑ ናይ MIT ሜቀሌ ዩኒቨርሲቲ ምሩቃን።",
+      "members": [
+        { "name": "ኒሜ ቃድር", "role": "ናይ ጉጅለ መሪሕ ን ML ምሃንዲስ" },
+        { "name": "ሃለፎም ሃይሉ", "role": "ናይ ድሕሪ-መዳያ ፕሮግራሜር" },
+        { "name": "ጉዕሽ ተክሉ", "role": "ናይ ቅድሚ-መዳያ ፕሮግራሜር" },
+        { "name": "ሃዱሽ ፅጋቡ", "role": "ናይ ዳታቤዝ ምሃንዲስ" },
+        { "name": "ክብሮም ጌጣቸው", "role": "AI/ML ተመራማሪ" },
+        { "name": "ሰሎሞን ግ/ጭርቆስ", "role": "ናይ ሲስተም ኣርቴክት" },
+        { "name": "ግ/ዝሔር ደስታለም", "role": "UI/UX ዲዛይነር" }
+      ],
+      "supervisor": "ብ Ins. ጆርጅ ዝቆጻጸር",
+      "institution": "ሜቀሌ ዩኒቨርሲቲ – MIT, ናይ ኢንፎርሜሽን ቴክኖሎጂ ዲፓርትመንት",
+      "year": "የካቲት 2026"
+    }
+  },
+  "contact": {
+    "hero": {
+      "title": "ተወከሉና",
+      "subtitle": "ብዛዕባ CropGuard AI ሕቶ ኣለኩም? ምስ ሓረስቶት፣ ተመራመርቲ፣ ሽሩካት ንዘራረብ ደስ ይብለና።"
+    },
+    "form": {
+      "name": "ምሉእ ስም",
+      "email": "ኢሜይል ኣድራሻ",
+      "subject": "ርእሲ",
+      "message": "መልእኽቲ",
+      "send": "መልእኽቲ ላኡ",
+      "success": "መልእኽቲ ተላኢኹ! ብቕልጡፍ ክምልሱልኩም እዮም።",
+      "namePlaceholder": "ምሉእ ስምኩም",
+      "emailPlaceholder": "your@email.com",
+      "subjectPlaceholder": "ብኸመይ ክንሕግዘኩም?",
+      "messagePlaceholder": "መልእኽትኹም ፃሓፉ..."
+    },
+    "info": {
+      "title": "ተወከሉና",
+      "institution": "ሜቀሌ ቴክኖሎጂ ኢንስቲቱት",
+      "department": "ናይ ኢንፎርሜሽን ቴክኖሎጂ ዲፓርትመንት",
+      "location": "ሜቀሌ፣ ትግራይ፣ ኢትዮጵያ",
+      "email": "cropguard@mekelle.edu.et",
+      "topics": {
+        "title": "ዋና ርእስታት",
+        "items": ["ቴክኒካዊ ደገፍ", "ምርምር ምትሕብባር", "ናይ ሕርሽ ሽፋን", "ርእይቶ ሪፖርት", "ሽርክነት"]
+      }
+    },
+    "faq": {
+      "title": "ተደጋጋሚ ሕቶታት",
+      "items": [
+        { "q": "CropGuard AI ናጻ ድዩ?", "a": "እወ፣ ንኩሉ ሓረስቶት ናጻ እዩ።" },
+        { "q": "ኣየኖት ሕርሽታት ይድገፉ?", "a": "ስርናይ፣ ጣፍ፣ ሽምብራ፣ ቲማቲም፣ ድንሽ፣ ፎሮ።" },
+        { "q": "ኣብ ስልኪ ይሰርሕ ዶ?", "a": "እወ፣ ኣብ ዘዘኾነ ዘመናዊ ስልኪ ወይ ኮምፒዩተር ይሰርሕ።" },
+        { "q": "ናይ AI ምርምር ክሳዕ ክንደይ ትኽክለኛ እዩ?", "a": "93.7% ትኽክለኛነት ኣርኢዩ።" }
+      ]
+    }
+  },
+  "diseases": {
+    "hero": {
+      "title": "ናይ ሕማም ኢንሳይክሎፒዲያ",
+      "subtitle": "ናይ CropGuard AI ሕርሽ ሕማም ሙሉእ ማጣቀሻ — ምልክታት፣ ምኽንያታት፣ ናይ ሕክምና ዘዴታት።"
+    },
+    "search": "ሕማማት ወይ ሕርሽታት ድለዩ...",
+    "filter": {
+      "all": "ኩሎም ሕርሽታት",
+      "wheat": "ስርናይ",
+      "maize": "ሽምብራ",
+      "tomato": "ቲማቲም",
+      "potato": "ድንሽ",
+      "pepper": "ፎሮ",
+      "teff": "ጣፍ"
+    },
+    "severity": {
+      "high": "ልዑል ሓደጋ",
+      "medium": "ማእከላይ ሓደጋ",
+      "low": "ዝሓደ ሓደጋ"
+    },
+    "labels": {
+      "symptoms": "ምልክታት",
+      "causes": "ምኽንያታት",
+      "treatment": "ሕክምና",
+      "prevention": "ምክልኻል",
+      "chemical": "ኬሚካዊ ሕክምና",
+      "organic": "ተፈጥሮኣዊ ሕክምና",
+      "crop": "ሕርሽ",
+      "severity": "ሓደጋ"
+    },
+    "list": [
+      {
+        "id": "wheat-stem-rust",
+        "name": "ናይ ስርናይ ምሶ ዝቋ",
+        "crop": "ስርናይ",
+        "severity": "high",
+        "symptoms": "ብርቱቃናዊ-ቀይሕ ክሳዕ ጸልማት ቡናዊ ፑስቱሎታት ኣብ ምሳ ን ቅጠልታት። ኣጻምእ ሕርሽ ብቕሉዕ ይሞት።",
+        "causes": "Puccinia graminis f.sp. tritici ፈንቓይ ። ሙቅ ርጥብ ኩነታት (15-25°C) ይምቀ።",
+        "chemical": "ቴቡኮናዞል፣ ፕሮፒኮናዞል ወይ ትሪፍሎክሲስቶቢን ፈንቓይ ፋርማሲ።",
+        "organic": "ዝቋ-ዓቓቢ ዓይነት ዘርኢ ተጠቐሙ። ዝሓመሙ ሕርሽ ኣወግዱ።",
+        "prevention": "ናይ ዝቋ-ዓቓቢ ዓይነት ዘርኢ ዘርኡ። ዓሚ ዓሚ ሕርሽ ቦታ ቀይሩ።"
+      },
+      {
+        "id": "wheat-leaf-rust",
+        "name": "ናይ ስርናይ ቅጠል ዝቋ",
+        "crop": "ስርናይ",
+        "severity": "medium",
+        "symptoms": "ንኣሽቱ ክብቢ ብርቱቃናዊ-ቡናዊ ፑስቱሎታት ኣብ ቅጠልታት። ቅጠልታት ቕልጡፍ ይሞቱ።",
+        "causes": "Puccinia triticina ፈንቓይ። ቡሩድ ርጥብ ኩነታት (15-22°C) ይምቀ።",
+        "chemical": "ፕሮፒኮናዞል ወይ ማንኮዜብ ፈንቓይ ፋርማሲ።",
+        "organic": "ዓቓቢ ዓይነት ዘርኢ ተጠቐሙ። ሕርሽ ቦታ ቀይሩ።",
+        "prevention": "ዓቓቢ ዝርያ ምረፁ። ናይ ቀዳሞት ምዕዋቶ ዘሎ ምዓልቲ ሓልዉ።"
+      },
+      {
+        "id": "maize-leaf-blight",
+        "name": "ናይ ሽምብራ ሰሜናዊ ቅጠል ብሌን",
+        "crop": "ሽምብራ",
+        "severity": "high",
+        "symptoms": "ነዊሕ ሲጋር-ቅርጺ ዘለዎ ግራጫ-ቅጠሎ ናብ ቡናዊ ቁስሊ (5–15 ሳ.ሜ)። ቅጠልታት ብምሉኡ ክሞቱ ይኽእሉ።",
+        "causes": "Exserohilum turcicum ፈንቓይ። ቡሩድ ርጥብ ኩነታት ይምቀ።",
+        "chemical": "ማንኮዜብ፣ ኣዞክሲስቶቢን ፈንቓይ ፋርማሲ።",
+        "organic": "ዓቓቢ ሃይብሪድ ዘርኢ ተጠቐሙ። ሕርሽ ቦታ ቀይሩ።",
+        "prevention": "ኣረጋጊጽካ ዘርኢ ዘርኡ። ዓቕሚ ኣዕቢኻ ምዝራእ ኣይትዘርኡ።"
+      },
+      {
+        "id": "maize-gray-leaf-spot",
+        "name": "ናይ ሽምብራ ናይ ግራጫ ቅጠል ነጠብጣብ",
+        "crop": "ሽምብራ",
+        "severity": "medium",
+        "symptoms": "ናይ ቅጠል ደም ስር ተኸቲሉ ዝኸይድ ኦርቶጎናዊ ግራጫ-ቡናዊ ቁስሊ። ቅጠልታት ቕልጡፍ ይሞቱ።",
+        "causes": "Cercospora zeae-maydis ፈንቓይ። ርጥብ (>90%) ይምቀ።",
+        "chemical": "ኣዞክሲስቶቢን ወይ ፒራክሎስቶቢን ፈንቓይ ፋርማሲ።",
+        "organic": "ዓቓቢ ሃይብሪድ ዘርኢ ተጠቐሙ። ሕርሽ ቦታ ቀይሩ።",
+        "prevention": "ዓቓቢ ዝርያ ምረፁ። ናይ ሕርሽ ተረፍ ኣወግዱ።"
+      },
+      {
+        "id": "tomato-late-blight",
+        "name": "ናይ ቲማቲም ድሕሪ ብሌን",
+        "crop": "ቲማቲም",
+        "severity": "high",
+        "symptoms": "ናብ ቡናዊ-ጸልማት ቁስሊ ዝቅይር ናይ ማይ-ዝሓዘ ቁስሊ። ኣብ ታሕቲ ቅጠልታት ጻዕዳ ሻጋራ ይርኤ። ፍሬ ቡናዊ ይኸዉን።",
+        "causes": "Phytophthora infestans (ኦሚሴቴ)። ቡሩድ (10-20°C) ርጥብ ኩነታት ሓደጋ ዝሓደ እዩ።",
+        "chemical": "ሜታሃሊል ++ ማንኮዜብ፣ ሲሞክሳኒል ፈንቓይ ፋርማሲ።",
+        "organic": "ዝሓመሙ ቅጠልታት ቕልጡፍ ኣወግዱ። ናይ ቦርዶ ሕቡር ፍርቅ ርጨ።",
+        "prevention": "ልዕሊ ቅጠልታት ዝወቅዕ ምስካ ኣቑሙ። ምቕባጽ ኣጸቢቕኩም ኣካዪዱ።"
+      },
+      {
+        "id": "tomato-bacterial-spot",
+        "name": "ናይ ቲማቲም ናይ ባክቴሪያ ነጠብጣብ",
+        "crop": "ቲማቲም",
+        "severity": "medium",
+        "symptoms": "ብጫ ሃሎ ዘለወን ቡናዊ ነጠብጣብ ኣብ ቅጠልታት። ፍሬ ላዕሊ ቁስሊ ይርኤ።",
+        "causes": "Xanthomonas vesicatoria ባክቴሪያ። ዝናብ ን ሙቀት ምስ ቀጸለ ይፋፋሙ።",
+        "chemical": "ናይ ምስ ካፐር ዝተሰርሐ ባክቴሪሳይድ ፣ ማንኮዜብ ሓቢሩ።",
+        "organic": "ዝሞቐ ዘርኢ ሕክምና (50°C 25 ደቒቅ)። ልዕሊ ምስካ ዝወቅዕ ምስካ ኣቁሙ።",
+        "prevention": "ንልቲ ዓመት ሕርሽ ቦታ ቀይሩ። ቀሳውር ኣጽሪኹም ኣቀምጡ።"
+      },
+      {
+        "id": "potato-late-blight",
+        "name": "ናይ ድንሽ ድሕሪ ብሌን",
+        "crop": "ድንሽ",
+        "severity": "high",
+        "symptoms": "ቅጠልታት ን ምሳ ኣብ ቡናዊ-ጸልማት ቁስሊ ይቅየሩ። ድንሽ ቡናዊ ይኸዉን።",
+        "causes": "Phytophthora infestans። ቡሩድ ርጥብ ኩነታት ሓደጋ ዝሓደ እዩ።",
+        "chemical": "ሜታሃሊል፣ ፕሮፓሞካርብ ወይ ሲሞክሳኒል ፈንቓይ ፋርማሲ።",
+        "organic": "ዝሓመሙ ተረፍ ኣቃፅሉ ወይ ኣወግዱ። ናይ ዘርኢ ምስክር ዘለዎ ዘርኢ ተጠቐሙ።",
+        "prevention": "ናይ ዘርኢ ምስክር ተጠቐሙ። ጽቡቕ ፍሳሽ ኣዝሒሉ።"
+      },
+      {
+        "id": "pepper-bacterial-spot",
+        "name": "ናይ ፎሮ ናይ ባክቴሪያ ነጠብጣብ",
+        "crop": "ፎሮ",
+        "severity": "medium",
+        "symptoms": "ቅጠልታት ናይ ቢጫ ሃሎ ዘለዎ ቡናዊ ነጠብጣብ ። ፍሬ ቁስሊ ይርኤ።",
+        "causes": "Xanthomonas euvesicatoria ባክቴሪያ።",
+        "chemical": "Copper hydroxide ወይ copper oxychloride፣ ማንኮዜብ ሓቢሩ።",
+        "organic": "ዝሞቐ ዘርኢ ሕክምና ። ልዕሊ ምስካ ዝወቅዕ ምስካ ኣቁሙ።",
+        "prevention": "3 ዓመት ሕርሽ ቦታ ቀይሩ። ቀሳውር ኣጽሪኹም ኣቀምጡ።"
+      }
+    ]
+  },
+  "auth": {
+    "signin": {
+      "title": "እንኳን ደሓን መጻእኩም",
+      "subtitle": "ናብ ዳሽቦርድኩም ንምእታው ኣትዉ",
+      "email": "ኢሜይል ኣድራሻ",
+      "password": "ሕሽሽ ቃል",
+      "button": "እቶ",
+      "noAccount": "ሕሳብ የብሉን?",
+      "register": "ተምዝገቡ",
+      "backHome": "ናብ መበገሲ ተመለሱ"
+    },
+    "register": {
+      "title": "ሕሳብ ፍጠሩ",
+      "subtitle": "ሕርሽኹም ንምሕላው ተጸምበሩ",
+      "name": "ምሉእ ስም",
+      "email": "ኢሜይል ኣድራሻ",
+      "password": "ሕሽሽ ቃል",
+      "confirm": "ሕሽሽ ቃል ኣረጋግጹ",
+      "button": "ሕሳብ ፍጠሩ",
+      "hasAccount": "ሕሳብ ኣለኩም?",
+      "signin": "እቶ",
+      "backHome": "ናብ መበገሲ ተመለሱ"
+    }
+  },
+  "dashboard": {
+    "title": "ዳሽቦርደይ",
+    "backHome": "ናብ መበገሲ ተመለሱ",
+    "welcome": "እንኳን ደሓን መጻእኩም",
+    "stats": {
+      "totalScans": "ጠቕላላ ምርምራት",
+      "diseased": "ሓሚሙ",
+      "healthy": "ጥዑይ",
+      "thisMonth": "እዚ ወርሒ"
+    },
+    "recentScans": "ናይ ቀረባ ምርምራት",
+    "noScans": "ምርምር የለን። ናይ መጀምርያ ናይ ቅጠል ስእልኩም ክፈቱ።",
+    "uploadNew": "ሓዲሽ ስእሊ ክፈቱ"
+  },
+  "footer": {
+    "tagline": "ን ሓረስቶት ኢትዮጵያ AI ናይ ሕርሽ ምርምር",
+    "links": "ቅጡፍ ሊንክታት",
+    "contact": "ተወከሉና",
+    "rights": "ኩሎም መሰላት ዝተሓለዉ እዮም።",
+    "developed": "ሜቀሌ ዩኒቨርሲቲ – MIT · ናይ ካቲት 2026"
+  }
+}
