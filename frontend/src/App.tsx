@@ -2,7 +2,7 @@ import { Switch, Route, Router as WouterRouter, useLocation } from "wouter";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
-import { Suspense } from "react";
+import { Suspense, useEffect } from "react";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import Home from "@/pages/Home";
@@ -40,28 +40,26 @@ function Layout({ children, path }: { children: React.ReactNode; path: string })
 function AuthRedirect({ children }: { children: React.ReactNode }) {
   const { user } = useAuth();
   const [, setLocation] = useLocation();
-  if (user) {
-    setLocation("/app");
-    return null;
-  }
+  useEffect(() => {
+    if (user) setLocation("/app");
+  }, [user, setLocation]);
+  if (user) return null;
   return <>{children}</>;
+}
+
+function RedirectToSignIn() {
+  const [, setLocation] = useLocation();
+  useEffect(() => { setLocation("/signin"); }, [setLocation]);
+  return null;
 }
 
 function Router() {
   const { user, loading } = useAuth();
 
-  if (loading) {
-    return (
-      <div className="min-h-screen flex items-center justify-center bg-green-50">
-        <div className="flex flex-col items-center gap-4">
-          <div className="w-10 h-10 border-4 border-green-500 border-t-transparent rounded-full animate-spin" />
-          <p className="text-green-700 text-sm font-medium">Loading CropGuard AI…</p>
-        </div>
-      </div>
-    );
-  }
-
-  if (user) {
+  // Show AppShell only once auth check is complete AND user is logged in.
+  // During loading, fall through to the public Switch so the landing page
+  // is visible immediately instead of showing a blank spinner.
+  if (!loading && user) {
     return <AppShell />;
   }
 
@@ -86,7 +84,7 @@ function Router() {
         {() => <Register />}
       </Route>
       <Route path="/app">
-        {() => <AppShell />}
+        {() => loading ? null : <RedirectToSignIn />}
       </Route>
       <Route>
         {() => (

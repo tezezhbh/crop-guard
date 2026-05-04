@@ -9,19 +9,19 @@ const { Pool } = require("pg");
 require("dotenv").config();
 
 const pool = new Pool({
-  connectionString: process.env.DATABASE_URL,
-  max: 10,
-  idleTimeoutMillis: 30_000,
+  connectionString:        process.env.DATABASE_URL,
+  max:                     10,
+  idleTimeoutMillis:       30_000,
   connectionTimeoutMillis: 5_000,
 });
-pool.on("error", (err) => console.error("[db] Pool error:", err.message));
+pool.on("error", err => console.error("[db] Pool error:", err.message));
 
 async function initDB() {
   const client = await pool.connect();
   try {
     await client.query("BEGIN");
 
-    // Users
+    // ── Users ──────────────────────────────────────────────
     await client.query(`
       CREATE TABLE IF NOT EXISTS users (
         id              SERIAL        PRIMARY KEY,
@@ -31,7 +31,7 @@ async function initDB() {
         institution     TEXT          NOT NULL DEFAULT 'Mekelle Institute of Technology',
         language        TEXT          NOT NULL DEFAULT 'en',
         plan            TEXT          NOT NULL DEFAULT 'free'
-        CHECK (plan IN ('free','premium','enterprise')),
+                          CHECK (plan IN ('free','premium','enterprise')),
         plan_expires_at TIMESTAMPTZ,
         scans_today     INTEGER       NOT NULL DEFAULT 0,
         scans_date      DATE          NOT NULL DEFAULT CURRENT_DATE,
@@ -39,11 +39,9 @@ async function initDB() {
         updated_at      TIMESTAMPTZ   NOT NULL DEFAULT NOW()
       );
     `);
-    await client.query(
-      `CREATE INDEX IF NOT EXISTS idx_users_email ON users(email);`,
-    );
+    await client.query(`CREATE INDEX IF NOT EXISTS idx_users_email ON users(email);`);
 
-    // Refresh tokens
+    // ── Refresh tokens ─────────────────────────────────────
     await client.query(`
       CREATE TABLE IF NOT EXISTS refresh_tokens (
         id          SERIAL        PRIMARY KEY,
@@ -54,12 +52,8 @@ async function initDB() {
         created_at  TIMESTAMPTZ   NOT NULL DEFAULT NOW()
       );
     `);
-    await client.query(
-      `CREATE INDEX IF NOT EXISTS idx_rt_user  ON refresh_tokens(user_id);`,
-    );
-    await client.query(
-      `CREATE INDEX IF NOT EXISTS idx_rt_token ON refresh_tokens(token_hash);`,
-    );
+    await client.query(`CREATE INDEX IF NOT EXISTS idx_rt_user  ON refresh_tokens(user_id);`);
+    await client.query(`CREATE INDEX IF NOT EXISTS idx_rt_token ON refresh_tokens(token_hash);`);
 
     // ── Predictions — create fresh OR migrate existing ─────
     // First create the table if it doesn't exist at all
@@ -112,7 +106,7 @@ async function initDB() {
       CREATE INDEX IF NOT EXISTS idx_pred_user ON predictions(user_id, created_at DESC);
     `);
 
-    // Feedback
+    // ── Feedback ───────────────────────────────────────────
     await client.query(`
       CREATE TABLE IF NOT EXISTS feedback (
         id               SERIAL        PRIMARY KEY,
@@ -143,9 +137,7 @@ async function initDB() {
     `);
 
     await client.query("COMMIT");
-    console.log(
-      "[db] Schema ready — tables: users, refresh_tokens, predictions, feedback",
-    );
+    console.log("[db] Schema ready — tables: users, refresh_tokens, predictions, feedback");
   } catch (err) {
     await client.query("ROLLBACK");
     console.error("[db] Schema init failed:", err.message);
@@ -156,19 +148,14 @@ async function initDB() {
 }
 
 async function resetQuotaIfNewDay(userId) {
-  await pool.query(
-    `
+  await pool.query(`
     UPDATE users SET scans_today=0, scans_date=CURRENT_DATE
     WHERE id=$1 AND scans_date < CURRENT_DATE
-  `,
-    [userId],
-  );
+  `, [userId]);
 }
 
 async function checkDB() {
-  const { rows } = await pool.query(
-    "SELECT COUNT(*) AS total FROM predictions",
-  );
+  const { rows } = await pool.query("SELECT COUNT(*) AS total FROM predictions");
   return { connected: true, total_scans: Number(rows[0].total) };
 }
 

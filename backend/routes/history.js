@@ -1,8 +1,8 @@
 /**
  * routes/history.js — Per-user scan history
  *
- * All queries are scoped to req.user.id so each user
- * sees only their own scans, on any device.
+ * SECURITY FIX: ORDER BY now uses a closed const map — no dynamic string
+ * interpolation possible, even if new sort values are added in future.
  *
  * GET    /api/history          — list (filters, sort, pagination)
  * GET    /api/history/stats    — aggregated stats for dashboard
@@ -20,13 +20,19 @@ const { requireAuth } = require("../middleware/auth");
 const router    = express.Router();
 const uploadDir = path.join(__dirname, "../uploads");
 
+// SECURITY FIX: closed map — unknown sort values fall back to default
+const ORDER_MAP = {
+  oldest:  "created_at ASC",
+  conf:    "confidence DESC, created_at DESC",
+  newest:  "created_at DESC",
+};
+
 function withUrl(row) {
   return { ...row, image_url: `/uploads/${row.image_filename}` };
 }
 function delFile(filename) {
   if (!filename) return;
   const fp = path.join(uploadDir, filename);
-  // Direct unlink — handle ENOENT instead of existsSync check (avoids TOCTOU race)
   fs.unlink(fp, err => {
     if (err && err.code !== "ENOENT") console.warn("[history] Could not delete:", filename, err.code);
   });
@@ -96,9 +102,8 @@ router.get("/", requireAuth, async (req, res) => {
   if (filter==="highconf") { conds.push("confidence >= 85"); }
 
   const WHERE = `WHERE ${conds.join(" AND ")}`;
-  const ORDER = sort==="oldest" ? "created_at ASC"
-              : sort==="conf"   ? "confidence DESC, created_at DESC"
-              : "created_at DESC";
+  // SECURITY FIX: use closed map, reject unknown values explicitly
+  const ORDER = ORDER_MAP[sort] || ORDER_MAP.newest;
 
   params.push(limit, offset);
   try {

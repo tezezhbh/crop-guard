@@ -1,4 +1,13 @@
-# backend/.gitignore
+# Dependencies
 node_modules/
+
+# Secrets — NEVER commit real credentials
 .env
+
+# User uploads — never commit actual uploaded images
 uploads/
+!uploads/.gitkeep
+
+# Logs
+*.log
+npm-debug.log*

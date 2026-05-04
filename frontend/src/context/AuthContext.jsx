@@ -59,10 +59,13 @@ export function AuthProvider({ children }) {
         if (res.ok) {
           const data = await res.json();
           saveTokens(data.accessToken, data.refreshToken);
-          // Merge stored UI settings
+          // Merge stored UI settings and preserved language
           try {
-            const ui = JSON.parse(localStorage.getItem("cg_ui") || "{}");
-            setUser({ ...data.user, ...ui });
+            const ui   = JSON.parse(localStorage.getItem("cg_ui") || "{}");
+            const lang = localStorage.getItem("cropguard_lang");
+            const merged = { ...data.user, ...ui, ...(lang ? { language: lang } : {}) };
+            localStorage.setItem("cg_user", JSON.stringify(merged));
+            setUser(merged);
           } catch { setUser(data.user); }
         } else {
           clearTokens();
@@ -135,8 +138,9 @@ export function AuthProvider({ children }) {
       if (!res.ok) { setAuthError(data.error || "Login failed."); return null; }
       saveTokens(data.accessToken, data.refreshToken);
       try {
-        const ui = JSON.parse(localStorage.getItem("cg_ui") || "{}");
-        const merged = { ...data.user, ...ui };
+        const ui   = JSON.parse(localStorage.getItem("cg_ui") || "{}");
+        const lang = localStorage.getItem("cropguard_lang");
+        const merged = { ...data.user, ...ui, ...(lang ? { language: lang } : {}) };
         localStorage.setItem("cg_user", JSON.stringify(merged));
         setUser(merged);
         return merged;
@@ -193,8 +197,9 @@ export function AuthProvider({ children }) {
       if (res.ok) {
         const data = await res.json();
         try {
-          const ui = JSON.parse(localStorage.getItem("cg_ui") || "{}");
-          const merged = { ...data, ...ui };
+          const ui   = JSON.parse(localStorage.getItem("cg_ui") || "{}");
+          const lang = localStorage.getItem("cropguard_lang");
+          const merged = { ...data, ...ui, ...(lang ? { language: lang } : {}) };
           localStorage.setItem("cg_user", JSON.stringify(merged));
           setUser(merged);
         } catch {

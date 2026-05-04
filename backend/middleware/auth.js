@@ -1,25 +1,16 @@
 /**
  * middleware/auth.js
  *
- * Verifies the JWT access token on every protected request.
- * Attaches req.user = { id, email, name, plan } on success.
- *
- * Usage:
- *   const { requireAuth, optionalAuth } = require("../middleware/auth");
- *   router.get("/protected", requireAuth, handler);
+ * SECURITY FIX: JWT_SECRET fallback removed. App fails hard if secret is missing.
  */
-
 const jwt = require("jsonwebtoken");
 
-const SECRET = process.env.JWT_SECRET || "cropguard_dev_secret_change_in_production";
-if (process.env.NODE_ENV === "production" && !process.env.JWT_SECRET) {
-  console.error("[auth] FATAL: JWT_SECRET must be set in production. Exiting.");
+const SECRET = process.env.JWT_SECRET;
+if (!SECRET) {
+  console.error("[auth] FATAL: JWT_SECRET environment variable is required. Set it in .env and restart.");
   process.exit(1);
 }
 
-/**
- * requireAuth — blocks the request if no valid token
- */
 function requireAuth(req, res, next) {
   const token = extractToken(req);
   if (!token) {
@@ -36,10 +27,6 @@ function requireAuth(req, res, next) {
   }
 }
 
-/**
- * optionalAuth — attaches user if token present, continues either way
- * Used for public endpoints that behave differently when logged in
- */
 function optionalAuth(req, res, next) {
   const token = extractToken(req);
   if (token) {
@@ -58,7 +45,7 @@ function signAccessToken(user) {
   return jwt.sign(
     { id: user.id, email: user.email, name: user.name, plan: user.plan },
     SECRET,
-    { expiresIn: "24h" }   // 24h — frontend auto-refreshes anyway
+    { expiresIn: "24h" }
   );
 }
 
@@ -66,7 +53,7 @@ function signRefreshToken(userId) {
   return jwt.sign(
     { sub: userId, type: "refresh" },
     SECRET,
-    { expiresIn: "30d" }   // 30-day persistent session
+    { expiresIn: "30d" }
   );
 }
 

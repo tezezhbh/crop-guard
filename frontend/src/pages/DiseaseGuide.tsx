@@ -10,8 +10,8 @@ const severityColors: Record<string, { bg: string; text: string; dot: string }> 
 };
 
 const cropEmoji: Record<string, string> = {
-  Wheat: "🌾", Maize: "🌽", Tomato: "🍅", Potato: "🥔", Pepper: "🌶️", Teff: "🌿",
-  ስንዴ: "🌾", በቆሎ: "🌽", ቲማቲም: "🍅", ድንች: "🥔", ፍርሻ: "🌶️", ጤፍ: "🌿",
+  Wheat: "🌾", Maize: "🌽", Tomato: "🍅", Potato: "🥔", Pepper: "🌶️", Teff: "🌿", Sorghum: "🌾",
+  ስንዴ: "🌾", በቆሎ: "🌽", ቲማቲም: "🍅", ድንች: "🥔", ፍርሻ: "🌶️", ጤፍ: "🌿", ማሽላ: "🌾",
   ስርናይ: "🌾", ሽምብራ: "🌽", ድንሽ: "🥔", ፎሮ: "🌶️", ጣፍ: "🌿",
 };
 
@@ -126,6 +126,8 @@ function DiseaseCard({ disease, labels }: { disease: Disease; labels: Record<str
   );
 }
 
+const ALL_CROP_KEYS = ["wheat", "maize", "sorghum", "tomato", "potato", "pepper", "teff"];
+
 export default function DiseaseGuide() {
   const { t } = useTranslation();
   const [search, setSearch] = useState("");
@@ -134,15 +136,17 @@ export default function DiseaseGuide() {
   const diseases = t("diseases.list", { returnObjects: true }) as Disease[];
   const labels = t("diseases.labels", { returnObjects: true }) as Record<string, string>;
 
-  const filters = [
-    { key: "all", label: t("diseases.filter.all") },
-    { key: "wheat", label: t("diseases.filter.wheat") },
-    { key: "maize", label: t("diseases.filter.maize") },
-    { key: "tomato", label: t("diseases.filter.tomato") },
-    { key: "potato", label: t("diseases.filter.potato") },
-    { key: "pepper", label: t("diseases.filter.pepper") },
-    { key: "teff", label: t("diseases.filter.teff") },
-  ];
+  const filters = useMemo(() => {
+    const active = ALL_CROP_KEYS.filter((key) =>
+      diseases.some(
+        (d) => d.crop.toLowerCase() === key || d.id.startsWith(key)
+      )
+    );
+    return [
+      { key: "all", label: t("diseases.filter.all") },
+      ...active.map((key) => ({ key, label: t(`diseases.filter.${key}`) })),
+    ];
+  }, [diseases, t]);
 
   const filtered = useMemo(() => {
     return diseases.filter((d) => {

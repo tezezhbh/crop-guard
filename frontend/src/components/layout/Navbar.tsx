@@ -18,6 +18,11 @@ export default function Navbar() {
   const changeLanguage = (code: string) => {
     i18n.changeLanguage(code);
     localStorage.setItem("cropguard_lang", code);
+    try {
+      const cgUser = JSON.parse(localStorage.getItem("cg_user") || "{}");
+      cgUser.language = code;
+      localStorage.setItem("cg_user", JSON.stringify(cgUser));
+    } catch {}
     setLangOpen(false);
   };
 
