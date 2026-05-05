@@ -1,6 +1,6 @@
 """
 fix_test_set.py
-Your current test/ folder only has 20 images in 1 class — that is wrong.
+the current test/ folder only has 20 images in 1 class — that is wrong.
 This script rebuilds it properly by taking 10% from each class in val/.
 Run from inside ml/:  python fix_test_set.py
 """
